@@ -11,19 +11,19 @@
 html {
     /* font-family: Arial, Helvetica, sans-serif; */
     background-color: rgba(122, 191, 191, 0.5);
+    overflow-x: hidden;
     margin: 0 auto;
 }
 
 body {
     margin: 0 auto;
     background-color: #fff;
-    max-width: 1300px;
     font-family: montserrat, Arial, Helvetica, sans-serif;
 }
 
 
 
-@media screen and (min-width:414px) {
+/* @media screen and (min-width:414px) {
 
     h1,
     h2,
@@ -72,16 +72,6 @@ body {
 
     main img {
         width: 100%;
-    }
-
-    a[href="#breakfast"],
-    a[href="#brunch"],
-    a[href="#lunch"],
-    a[href="#dinner"],
-    a[href="#apps"],
-    a[href="#desserts"],
-    a[href="#drinks"] {
-        visibility: collapse;
     }
 
     header {
@@ -225,8 +215,637 @@ body {
         align-items: center;
     }
 
+} */
+
+@media screen and (min-width:768px) {
+
+
+    h1,
+    h2,
+    h3 {
+        margin: 0;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: bebas, cursive;
+        font-size: 30px;
+    }
+
+    h1 {
+        text-align: left;
+        padding: 15px 15px 10px;
+        font-size: 40px;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    li a {
+        text-decoration: none;
+    }
+
+    section {
+        padding: 0 10px;
+    }
+
+    .padded {
+        padding: 0 10px;
+    }
+
+    #recipe {
+        display: flex;
+        padding: 0;
+        flex-direction: row;
+        justify-content: space-around;
+        background: rgba(255, 255, 255, .75);
+        position: absolute;
+        top: 225px;
+        left: 0px;
+        width: 100%;
+    }
+
+    #recipe a {
+        color: #eb5428;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        font-family: bebas;
+
+    }
+
+    #signin {
+        text-decoration: none;
+        color: black;
+    }
+
+    .avatar-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 25px;
+        font-family: bebas;
+    }
+
+    .search-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .search-container input {
+        height: 35px;
+    }
+
+    main {
+        padding-top: 175px;
+        position: relative;
+    }
+
+    header div {
+        display: flex;
+    }
+
+    input {
+        border: #eb5428 solid 2px;
+
+    }
+
+    main img {
+        width: 100%;
+    }
+
+
+    #recipe li {
+        padding: 15px 0;
+    }
+
+    header {
+        position: absolute;
+        top: 0px;
+        height: 100px;
+    }
+
+    nav ul {
+        display: flex;
+        width: 100%;
+        padding: 0;
+        margin-top: 80px;
+        box-shadow: 0px 2px 2px 0px #888;
+
+    }
+
+    #search-group {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    nav li {
+        list-style-type: none;
+        padding-bottom: 10px;
+
+    }
+
+    #hamburger-icon {
+        display: none;
+    }
+
+    #dining-icon {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    nav li a {
+        font-family: bebas;
+        color: #eb5428;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    nav img {
+        width: 50%;
+        margin-bottom: 3px;
+    }
+
+    #details span {
+        font-weight: bold;
+        padding-right: 10px;
+    }
+
+    #details ul {
+        padding-left: 10px;
+        text-align: center;
+
+    }
+
+    #ingredients-directions-section {
+        display: flex;
+    }
+
+
+    #directions {
+        flex-grow: 1;
+        padding-left: 15px;
+    }
+
+    #ingredients li {
+        list-style-type: square;
+        white-space: nowrap;
+        padding: 5px 0;
+    }
+
+    #ingredients ul {
+        padding-left: 25px;
+    }
+
+    #directions li {
+        list-style-type: auto;
+        padding: 5px 0;
+    }
+
+    #directions ol {
+        padding-left: 25px;
+    }
+
+    #sideDishes {
+        background-color: #7abfbf;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #sideDishes h2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    #sideDishes section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 0;
+    }
+
+    #sideDishes img {
+        width: 45%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+
+    #sideDishes h3,
+    #sideDishes p {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        text-align: left;
+    }
+
+    #sideDishes h3 {
+        padding: 5px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    #sideDishes p {
+        grid-row-start: 2;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    #sideDishes span {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        width: fit-content;
+        height: fit-content;
+        padding: 40px 0 0 0;
+        font-weight: bold;
+    }
+
+    #sideDishes div {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 3;
+    }
+
+    #sideDishes svg {
+        padding: 5px;
+    }
+
+    footer img {
+        width: 40%;
+        padding: 20px;
+    }
+
+    footer span {
+        visibility: hidden;
+    }
+
+    #social ul {
+        display: flex;
+        padding: 0;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    #social ul li {
+        padding: 0 15px;
+    }
+
+    #social a {
+        color: #eb5428;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    footer {
+        font-family: bebas, cursive;
+        text-align: center;
+        display: flex;
+        flex-direction: row-reverse;
+        padding-bottom: 100px;
+    }
+
+    footer p {
+        margin: 0;
+    }
+
+    #copyRight {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }
 
-@media screen and (min-width:768px) {}
+@media screen and (min-width:1280px) {
+    
+    h1,
+    h2,
+    h3 {
+        margin: 0;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: bebas, cursive;
+        font-size: 30px;
+    }
 
-@media screen and (min-width:1280px) {}
+    h1 {
+        text-align: left;
+        padding: 15px 15px 10px;
+        font-size: 40px;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    li a {
+        text-decoration: none;
+    }
+
+    section {
+        padding: 0 10px;
+    }
+
+    .padded {
+        padding: 0 10px;
+    }
+
+    #recipe {
+        display: flex;
+        padding: 0;
+        flex-direction: row;
+        justify-content: space-around;
+        background: rgba(255, 255, 255, .75);
+        position: absolute;
+        top: 225px;
+        left: 0px;
+        width: 100%;
+    }
+
+    #recipe a {
+        color: #eb5428;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        font-family: bebas;
+
+    }
+
+    #signin {
+        text-decoration: none;
+        color: black;
+    }
+
+    .avatar-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 25px;
+        font-family: bebas;
+    }
+
+    .search-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .search-container input {
+        height: 35px;
+    }
+
+    main {
+        padding-top: 175px;
+        position: relative;
+    }
+
+    header div {
+        display: flex;
+    }
+
+    input {
+        border: #eb5428 solid 2px;
+
+    }
+
+    main img {
+        width: 100%;
+    }
+
+
+    #recipe li {
+        padding: 15px 0;
+    }
+
+    header {
+        position: absolute;
+        top: 0px;
+        height: 100px;
+    }
+
+    nav ul {
+        display: flex;
+        width: 100%;
+        padding: 0;
+        margin-top: 80px;
+        box-shadow: 0px 2px 2px 0px #888;
+
+    }
+
+    #search-group {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    nav li {
+        list-style-type: none;
+        padding-bottom: 10px;
+
+    }
+
+    #hamburger-icon {
+        display: none;
+    }
+
+    #dining-icon {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    nav li a {
+        font-family: bebas;
+        color: #eb5428;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    nav img {
+        width: 50%;
+        margin-bottom: 3px;
+    }
+
+    #details{
+        background-color: #0d0d0d;
+        color: #7abfbf;
+    }
+
+    #details span {
+        font-weight: bold;
+        padding-right: 10px;
+    }
+
+    #details ul {
+        padding-left: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    #details li{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        padding-bottom: 5px;
+    }
+
+    #ingredients-directions-section {
+        display: flex;
+    }
+
+
+    #directions {
+        flex-grow: 1;
+        padding-left: 15px;
+    }
+
+    #ingredients li {
+        list-style-type: square;
+        white-space: nowrap;
+        padding: 5px 0;
+    }
+
+    #ingredients ul {
+        padding-left: 25px;
+    }
+
+    #directions li {
+        list-style-type: auto;
+        padding: 5px 0;
+    }
+
+    #directions ol {
+        padding-left: 25px;
+    }
+
+    #sideDishes {
+        background-color: #7abfbf;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #sideDishes h2 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    #sideDishes section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 0;
+    }
+
+    #sideDishes img {
+        width: 45%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #sideDishes h3,
+    #sideDishes p {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        text-align: left;
+    }
+
+    #sideDishes h3 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    #sideDishes p {
+        grid-row-start: 2;
+        margin: 0;
+        font-size: 16px;
+        padding: 30px 0 0 5px;
+    }
+
+    #sideDishes span {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        width: fit-content;
+        height: fit-content;
+        font-weight: bold;
+        padding-top: 40px;
+    }
+
+    #sideDishes div {
+        grid-column-start: 12;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        padding-top: 60px;
+    }
+
+    #sideDishes svg {
+        padding: 0 5px;
+    }
+
+    footer img {
+        width: 40%;
+        padding: 20px;
+    }
+
+    footer span {
+        visibility: hidden;
+    }
+
+    #social ul {
+        display: flex;
+        padding: 0;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    #social ul li {
+        padding: 0 15px;
+    }
+
+    #social a {
+        color: #eb5428;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    footer {
+        font-family: bebas, cursive;
+        text-align: center;
+        display: flex;
+        flex-direction: row-reverse;
+        padding-bottom: 80px;
+    }
+
+    footer p {
+        margin: 0;
+    }
+
+    #copyRight {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
