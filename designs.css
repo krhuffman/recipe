@@ -23,7 +23,7 @@ body {
 
 
 
-/* @media screen and (min-width:414px) {
+@media screen and (min-width:414px) {
 
     h1,
     h2,
@@ -526,7 +526,7 @@ body {
         flex-direction: column-reverse;
         align-items: center;
     }
-} */
+}
 
 @media screen and (min-width:1280px) {
 
