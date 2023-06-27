@@ -1,0 +1,232 @@
+@font-face {
+    font-family: bebas;
+    src: url("fonts/BebasNeue-Regular.ttf");
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url("fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+html {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    background-color: rgba(122, 191, 191, 0.5);
+    margin: 0 auto;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #fff;
+    max-width: 1300px;
+    font-family: montserrat, Arial, Helvetica, sans-serif;
+}
+
+
+
+@media screen and (min-width:414px) {
+
+    h1,
+    h2,
+    h3 {
+        margin: 0;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: bebas, cursive;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    li a {
+        text-decoration: none;
+    }
+
+
+    #recipe {
+        display: flex;
+        padding: 0;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #recipe a {
+        color: #eb5428;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    main {
+        padding-top: 150px;
+    }
+
+    header div {
+        display: flex;
+    }
+
+    input {
+        border: #eb5428 solid 2px;
+
+    }
+
+    main img {
+        width: 100%;
+    }
+
+    a[href="#breakfast"],
+    a[href="#brunch"],
+    a[href="#lunch"],
+    a[href="#dinner"],
+    a[href="#apps"],
+    a[href="#desserts"],
+    a[href="#drinks"] {
+        visibility: collapse;
+    }
+
+    header {
+        position: absolute;
+        top: 1px;
+        height: 100px;
+    }
+
+    nav ul {
+        display: flex;
+        width: 100%;
+        padding: 0;
+    }
+
+    nav li {
+        list-style-type: none;
+    }
+
+    nav img {
+        width: 10%;
+    }
+
+    #details span {
+        font-weight: bold;
+    }
+
+    #details ul {
+        padding-left: 10px;
+    }
+
+    #ingredients li {
+        list-style-type: square;
+    }
+
+    #ingredients ul {
+        padding-left: 25px;
+    }
+
+    #directions li {
+        list-style-type: auto;
+    }
+
+    #directions ol {
+        padding-left: 25px;
+    }
+
+    #sideDishes {
+        background-color: #7abfbf;
+    }
+
+    #sideDishes section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #sideDishes img {
+        width: 45%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        padding: 10px;
+    }
+
+    #sideDishes h3,
+    #sideDishes p {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        text-align: left;
+        padding: 10px;
+    }
+
+    #sideDishes h3 {
+        padding-top: 15px;
+        font-weight: bold;
+    }
+
+    #sideDishes p {
+        grid-row-start: 2;
+        margin: 0;
+    }
+
+    #sideDishes span {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        width: fit-content;
+        height: fit-content;
+        padding: 40px 0 0 10px;
+        font-weight: bold;
+    }
+
+    #sideDishes div {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 3;
+    }
+
+    #sideDishes svg {
+        padding: 5px;
+    }
+
+    footer img {
+        width: 40%;
+        padding: 20px;
+    }
+
+    footer span {
+        visibility: hidden;
+    }
+
+    #social ul {
+        display: flex;
+        padding: 0;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #social a {
+        color: #eb5428;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    footer {
+        font-family: bebas, cursive;
+        text-align: center;
+    }
+
+    footer p{
+        margin: 0;
+    }
+
+    #copyRight{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+}
+
+@media screen and (min-width:768px) {}
+
+@media screen and (min-width:1280px) {}
